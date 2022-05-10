@@ -1,0 +1,413 @@
+Updating the configuration and installing your custom providers, if any. Please wait.
+2022-05-09 21:55:03,884 INFO  [io.quarkus.deployment.QuarkusAugmentor] (main) Quarkus augmentation completed in 10187ms
+2022-05-09 21:55:09,183 WARN  [io.quarkus.agroal.runtime.AgroalConnectionConfigurer] (main) Agroal does not support detecting if a connection is still usable after an exception for database kind: cockroach
+2022-05-09 21:55:10,418 INFO  [org.keycloak.quarkus.runtime.hostname.DefaultHostnameProvider] (main) Hostname settings: FrontEnd: <request>, Strict HTTPS: false, Path: <request>, Strict BackChannel: false, Admin: <request>, Port: -1, Proxied: false
+2022-05-09 21:55:12,065 WARN  [org.infinispan.CONFIG] (keycloak-cache-init) ISPN000569: Unable to persist Infinispan internal caches as no global state enabled
+2022-05-09 21:55:12,095 WARN  [org.infinispan.PERSISTENCE] (keycloak-cache-init) ISPN000554: jboss-marshalling is deprecated and planned for removal
+2022-05-09 21:55:12,215 INFO  [org.infinispan.CONTAINER] (keycloak-cache-init) ISPN000556: Starting user marshaller 'org.infinispan.jboss.marshalling.core.JBossUserMarshaller'
+2022-05-09 21:55:12,952 INFO  [org.infinispan.CONTAINER] (keycloak-cache-init) ISPN000128: Infinispan version: Infinispan 'Triskaidekaphobia' 13.0.8.Final
+2022-05-09 21:55:14,588 INFO  [org.keycloak.connections.infinispan.DefaultInfinispanConnectionProviderFactory] (main) Node name: node_149637, Site name: null
+2022-05-09 21:55:15,225 INFO  [org.keycloak.services.DefaultKeycloakTransactionManager] (main) enlist org.keycloak.connections.jpa.JpaKeycloakTransaction
+2022-05-09 21:55:17,735 INFO  [org.keycloak.quarkus.runtime.storage.database.liquibase.QuarkusJpaUpdaterProvider] (main) Initializing database schema. Using changelog META-INF/jpa-changelog-master-crdb.xml
+2022-05-09 21:57:00,198 INFO  [org.keycloak.models.utils.KeycloakModelUtils] (main) Attempting transaction. Try #1
+2022-05-09 21:57:00,200 INFO  [org.keycloak.services.DefaultKeycloakTransactionManager] (main) wrapping existing transaction manager io.quarkus.narayana.jta.runtime.CDIDelegatingTransactionManager: io.quarkus.narayana.jta.runtime.CDIDelegatingTransactionManager@1c96bf1e
+2022-05-09 21:57:00,274 INFO  [org.keycloak.services.DefaultKeycloakTransactionManager] (main) enlist org.keycloak.transaction.JtaTransactionWrapper
+2022-05-09 21:57:00,274 INFO  [org.keycloak.services.DefaultKeycloakTransactionManager] (main) begin org.keycloak.transaction.JtaTransactionWrapper: org.keycloak.transaction.JtaTransactionWrapper@3ec6f3f1
+2022-05-09 21:57:00,389 WARN  [liquibase.database.core.CockroachDatabase] (main) Cannot set auto commit to true on connection
+2022-05-09 21:57:00,417 INFO  [org.keycloak.services.DefaultKeycloakTransactionManager] (main) enlist org.keycloak.connections.jpa.JpaKeycloakTransaction
+2022-05-09 21:57:02,024 INFO  [org.keycloak.services.DefaultKeycloakTransactionManager] (main) wrapping existing transaction manager io.quarkus.narayana.jta.runtime.CDIDelegatingTransactionManager: io.quarkus.narayana.jta.runtime.CDIDelegatingTransactionManager@1c96bf1e
+2022-05-09 21:57:02,024 INFO  [org.keycloak.services.DefaultKeycloakTransactionManager] (main) enlist org.keycloak.transaction.JtaTransactionWrapper
+2022-05-09 21:57:02,024 INFO  [org.keycloak.services.DefaultKeycloakTransactionManager] (main) begin org.keycloak.transaction.JtaTransactionWrapper: org.keycloak.transaction.JtaTransactionWrapper@78d52d4c
+2022-05-09 21:57:02,391 WARN  [liquibase.database.core.CockroachDatabase] (main) Cannot set auto commit to true on connection
+2022-05-09 21:57:02,456 INFO  [org.keycloak.services.DefaultKeycloakTransactionManager] (main) enlist org.keycloak.connections.jpa.JpaKeycloakTransaction
+2022-05-09 21:57:02,514 INFO  [org.keycloak.services] (main) KC-SERVICES0050: Initializing master realm
+2022-05-09 21:57:25,854 INFO  [org.keycloak.services.DefaultKeycloakTransactionManager] (main) commit org.keycloak.transaction.JtaTransactionWrapper
+2022-05-09 21:57:25,854 INFO  [org.keycloak.transaction.JtaTransactionWrapper] (main) commit io.quarkus.narayana.jta.runtime.CDIDelegatingTransactionManager io.quarkus.narayana.jta.runtime.CDIDelegatingTransactionManager
+2022-05-09 21:57:26,462 WARN  [io.agroal.pool] (main) Datasource '<default>': Closing open connection prior to commit
+2022-05-09 21:57:26,536 INFO  [org.keycloak.services.DefaultKeycloakTransactionManager] (main) commit org.keycloak.connections.jpa.JpaKeycloakTransaction
+2022-05-09 21:57:26,536 INFO  [org.keycloak.connections.jpa.JpaKeycloakTransaction] (main) Committing transaction
+2022-05-09 21:57:26,644 INFO  [org.keycloak.models.utils.KeycloakModelUtils] (main) Attempting commit transaction. Try #1
+2022-05-09 21:57:26,645 INFO  [org.keycloak.services.DefaultKeycloakTransactionManager] (main) commit org.keycloak.transaction.JtaTransactionWrapper
+2022-05-09 21:57:26,645 INFO  [org.keycloak.transaction.JtaTransactionWrapper] (main) commit io.quarkus.narayana.jta.runtime.CDIDelegatingTransactionManager io.quarkus.narayana.jta.runtime.CDIDelegatingTransactionManager
+2022-05-09 21:57:26,682 WARN  [io.agroal.pool] (main) Datasource '<default>': Closing open connection prior to commit
+2022-05-09 21:57:26,720 WARN  [com.arjuna.ats.jta] (main) ARJUNA016039: onePhaseCommit on < formatId=131077, gtrid_length=35, bqual_length=36, tx_uid=0:ffffc0a8010a:d39f:6279720c:0, node_name=quarkus, branch_uid=0:ffffc0a8010a:d39f:6279720c:3, subordinatenodename=null, eis_name=0 > (io.agroal.narayana.LocalXAResource@491f3fb0) failed with exception XAException.XA_RBROLLBACK: javax.transaction.xa.XAException: Error trying to transactionCommit local transaction: ERROR: restart transaction: TransactionRetryWithProtoRefreshError: TransactionRetryError: retry txn (RETRY_SERIALIZABLE - failed preemptive refresh): "sql txn" meta={id=7e197f22 key=/Tenant/658/Table/392/1/"u2baz"/0 pri=0.00353144 epo=0 ts=1652126243.725215467,2 min=1652126220.441637991,0 seq=2} lock=true stat=PENDING rts=1652126220.441637991,0 wto=false gul=1652126220.941637991,0
+  Hint: See: https://www.cockroachlabs.com/docs/v21.2/transaction-retry-error-reference.html#retry_serializable
+	at io.agroal.narayana.LocalXAResource.xaException(LocalXAResource.java:140)
+	at io.agroal.narayana.LocalXAResource.xaException(LocalXAResource.java:134)
+	at io.agroal.narayana.LocalXAResource.commit(LocalXAResource.java:72)
+	at com.arjuna.ats.internal.jta.resources.arjunacore.XAResourceRecord.topLevelOnePhaseCommit(XAResourceRecord.java:702)
+	at com.arjuna.ats.arjuna.coordinator.BasicAction.onePhaseCommit(BasicAction.java:2400)
+	at com.arjuna.ats.arjuna.coordinator.BasicAction.End(BasicAction.java:1502)
+	at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.end(TwoPhaseCoordinator.java:96)
+	at com.arjuna.ats.arjuna.AtomicAction.commit(AtomicAction.java:162)
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1295)
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.BaseTransaction.commit(BaseTransaction.java:128)
+	at io.quarkus.narayana.jta.runtime.CDIDelegatingTransactionManager.commit(CDIDelegatingTransactionManager.java:105)
+	at org.keycloak.transaction.JtaTransactionWrapper.commit(JtaTransactionWrapper.java:92)
+	at org.keycloak.services.DefaultKeycloakTransactionManager.commit(DefaultKeycloakTransactionManager.java:141)
+	at org.keycloak.models.utils.KeycloakModelUtils.runJobInTransaction(KeycloakModelUtils.java:254)
+	at org.keycloak.quarkus.runtime.storage.database.jpa.QuarkusJpaConnectionProviderFactory.postInit(QuarkusJpaConnectionProviderFactory.java:157)
+	at org.keycloak.quarkus.runtime.integration.QuarkusKeycloakSessionFactory.init(QuarkusKeycloakSessionFactory.java:96)
+	at org.keycloak.quarkus.runtime.integration.jaxrs.QuarkusKeycloakApplication.initializeKeycloakSessionFactory(QuarkusKeycloakApplication.java:68)
+	at org.keycloak.quarkus.runtime.integration.jaxrs.QuarkusKeycloakApplication.startup(QuarkusKeycloakApplication.java:49)
+	at org.keycloak.quarkus.runtime.integration.QuarkusLifecycleObserver.onStartupEvent(QuarkusLifecycleObserver.java:37)
+	at org.keycloak.quarkus.runtime.integration.QuarkusLifecycleObserver_Observer_onStartupEvent_b0e82415b143738dc1f986a5fa4668e83d0a5dea.notify(Unknown Source)
+	at io.quarkus.arc.impl.EventImpl$Notifier.notifyObservers(EventImpl.java:320)
+	at io.quarkus.arc.impl.EventImpl$Notifier.notify(EventImpl.java:302)
+	at io.quarkus.arc.impl.EventImpl.fire(EventImpl.java:73)
+	at io.quarkus.arc.runtime.ArcRecorder.fireLifecycleEvent(ArcRecorder.java:128)
+	at io.quarkus.arc.runtime.ArcRecorder.handleLifecycleEvents(ArcRecorder.java:97)
+	at io.quarkus.deployment.steps.LifecycleEventsBuildStep$startupEvent1144526294.deploy_0(Unknown Source)
+	at io.quarkus.deployment.steps.LifecycleEventsBuildStep$startupEvent1144526294.deploy(Unknown Source)
+	at io.quarkus.runner.ApplicationImpl.doStart(Unknown Source)
+	at io.quarkus.runtime.Application.start(Application.java:101)
+	at io.quarkus.runtime.ApplicationLifecycleManager.run(ApplicationLifecycleManager.java:103)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:67)
+	at org.keycloak.quarkus.runtime.KeycloakMain.start(KeycloakMain.java:86)
+	at org.keycloak.quarkus.runtime.cli.command.AbstractStartCommand.run(AbstractStartCommand.java:34)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1939)
+	at picocli.CommandLine.access$1300(CommandLine.java:145)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2358)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2352)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2314)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2316)
+	at picocli.CommandLine.execute(CommandLine.java:2078)
+	at org.keycloak.quarkus.runtime.cli.Picocli.parseAndRun(Picocli.java:88)
+	at org.keycloak.quarkus.runtime.KeycloakMain.main(KeycloakMain.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.quarkus.bootstrap.runner.QuarkusEntryPoint.doRun(QuarkusEntryPoint.java:60)
+	at io.quarkus.bootstrap.runner.QuarkusEntryPoint.main(QuarkusEntryPoint.java:31)
+Caused by: org.postgresql.util.PSQLException: ERROR: restart transaction: TransactionRetryWithProtoRefreshError: TransactionRetryError: retry txn (RETRY_SERIALIZABLE - failed preemptive refresh): "sql txn" meta={id=7e197f22 key=/Tenant/658/Table/392/1/"u2baz"/0 pri=0.00353144 epo=0 ts=1652126243.725215467,2 min=1652126220.441637991,0 seq=2} lock=true stat=PENDING rts=1652126220.441637991,0 wto=false gul=1652126220.941637991,0
+  Hint: See: https://www.cockroachlabs.com/docs/v21.2/transaction-retry-error-reference.html#retry_serializable
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:315)
+	at org.postgresql.jdbc.PgConnection.executeTransactionCommand(PgConnection.java:855)
+	at org.postgresql.jdbc.PgConnection.commit(PgConnection.java:877)
+	at io.agroal.pool.ConnectionHandler.transactionCommit(ConnectionHandler.java:355)
+	at io.agroal.narayana.LocalXAResource.commit(LocalXAResource.java:69)
+	... 46 more
+
+2022-05-09 21:57:26,737 INFO  [org.keycloak.transaction.JtaTransactionWrapper] (main) Error during commit. Status 6
+2022-05-09 21:57:26,738 WARN  [org.keycloak.services.DefaultKeycloakTransactionManager] (main) Error in transaction commit: java.lang.RuntimeException: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.
+	at org.keycloak.transaction.JtaTransactionWrapper.handleException(JtaTransactionWrapper.java:78)
+	at org.keycloak.transaction.JtaTransactionWrapper.commit(JtaTransactionWrapper.java:97)
+	at org.keycloak.services.DefaultKeycloakTransactionManager.commit(DefaultKeycloakTransactionManager.java:141)
+	at org.keycloak.models.utils.KeycloakModelUtils.runJobInTransaction(KeycloakModelUtils.java:254)
+	at org.keycloak.quarkus.runtime.storage.database.jpa.QuarkusJpaConnectionProviderFactory.postInit(QuarkusJpaConnectionProviderFactory.java:157)
+	at org.keycloak.quarkus.runtime.integration.QuarkusKeycloakSessionFactory.init(QuarkusKeycloakSessionFactory.java:96)
+	at org.keycloak.quarkus.runtime.integration.jaxrs.QuarkusKeycloakApplication.initializeKeycloakSessionFactory(QuarkusKeycloakApplication.java:68)
+	at org.keycloak.quarkus.runtime.integration.jaxrs.QuarkusKeycloakApplication.startup(QuarkusKeycloakApplication.java:49)
+	at org.keycloak.quarkus.runtime.integration.QuarkusLifecycleObserver.onStartupEvent(QuarkusLifecycleObserver.java:37)
+	at org.keycloak.quarkus.runtime.integration.QuarkusLifecycleObserver_Observer_onStartupEvent_b0e82415b143738dc1f986a5fa4668e83d0a5dea.notify(Unknown Source)
+	at io.quarkus.arc.impl.EventImpl$Notifier.notifyObservers(EventImpl.java:320)
+	at io.quarkus.arc.impl.EventImpl$Notifier.notify(EventImpl.java:302)
+	at io.quarkus.arc.impl.EventImpl.fire(EventImpl.java:73)
+	at io.quarkus.arc.runtime.ArcRecorder.fireLifecycleEvent(ArcRecorder.java:128)
+	at io.quarkus.arc.runtime.ArcRecorder.handleLifecycleEvents(ArcRecorder.java:97)
+	at io.quarkus.deployment.steps.LifecycleEventsBuildStep$startupEvent1144526294.deploy_0(Unknown Source)
+	at io.quarkus.deployment.steps.LifecycleEventsBuildStep$startupEvent1144526294.deploy(Unknown Source)
+	at io.quarkus.runner.ApplicationImpl.doStart(Unknown Source)
+	at io.quarkus.runtime.Application.start(Application.java:101)
+	at io.quarkus.runtime.ApplicationLifecycleManager.run(ApplicationLifecycleManager.java:103)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:67)
+	at org.keycloak.quarkus.runtime.KeycloakMain.start(KeycloakMain.java:86)
+	at org.keycloak.quarkus.runtime.cli.command.AbstractStartCommand.run(AbstractStartCommand.java:34)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1939)
+	at picocli.CommandLine.access$1300(CommandLine.java:145)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2358)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2352)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2314)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2316)
+	at picocli.CommandLine.execute(CommandLine.java:2078)
+	at org.keycloak.quarkus.runtime.cli.Picocli.parseAndRun(Picocli.java:88)
+	at org.keycloak.quarkus.runtime.KeycloakMain.main(KeycloakMain.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.quarkus.bootstrap.runner.QuarkusEntryPoint.doRun(QuarkusEntryPoint.java:60)
+	at io.quarkus.bootstrap.runner.QuarkusEntryPoint.main(QuarkusEntryPoint.java:31)
+Caused by: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1307)
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.BaseTransaction.commit(BaseTransaction.java:128)
+	at io.quarkus.narayana.jta.runtime.CDIDelegatingTransactionManager.commit(CDIDelegatingTransactionManager.java:105)
+	at org.keycloak.transaction.JtaTransactionWrapper.commit(JtaTransactionWrapper.java:92)
+	... 37 more
+	Suppressed: javax.transaction.xa.XAException: Error trying to transactionCommit local transaction: ERROR: restart transaction: TransactionRetryWithProtoRefreshError: TransactionRetryError: retry txn (RETRY_SERIALIZABLE - failed preemptive refresh): "sql txn" meta={id=7e197f22 key=/Tenant/658/Table/392/1/"u2baz"/0 pri=0.00353144 epo=0 ts=1652126243.725215467,2 min=1652126220.441637991,0 seq=2} lock=true stat=PENDING rts=1652126220.441637991,0 wto=false gul=1652126220.941637991,0
+  Hint: See: https://www.cockroachlabs.com/docs/v21.2/transaction-retry-error-reference.html#retry_serializable
+		at io.agroal.narayana.LocalXAResource.xaException(LocalXAResource.java:140)
+		at io.agroal.narayana.LocalXAResource.xaException(LocalXAResource.java:134)
+		at io.agroal.narayana.LocalXAResource.commit(LocalXAResource.java:72)
+		at com.arjuna.ats.internal.jta.resources.arjunacore.XAResourceRecord.topLevelOnePhaseCommit(XAResourceRecord.java:702)
+		at com.arjuna.ats.arjuna.coordinator.BasicAction.onePhaseCommit(BasicAction.java:2400)
+		at com.arjuna.ats.arjuna.coordinator.BasicAction.End(BasicAction.java:1502)
+		at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.end(TwoPhaseCoordinator.java:96)
+		at com.arjuna.ats.arjuna.AtomicAction.commit(AtomicAction.java:162)
+		at com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1295)
+		... 40 more
+	Caused by: org.postgresql.util.PSQLException: ERROR: restart transaction: TransactionRetryWithProtoRefreshError: TransactionRetryError: retry txn (RETRY_SERIALIZABLE - failed preemptive refresh): "sql txn" meta={id=7e197f22 key=/Tenant/658/Table/392/1/"u2baz"/0 pri=0.00353144 epo=0 ts=1652126243.725215467,2 min=1652126220.441637991,0 seq=2} lock=true stat=PENDING rts=1652126220.441637991,0 wto=false gul=1652126220.941637991,0
+  Hint: See: https://www.cockroachlabs.com/docs/v21.2/transaction-retry-error-reference.html#retry_serializable
+		at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+		at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+		at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+		at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:315)
+		at org.postgresql.jdbc.PgConnection.executeTransactionCommand(PgConnection.java:855)
+		at org.postgresql.jdbc.PgConnection.commit(PgConnection.java:877)
+		at io.agroal.pool.ConnectionHandler.transactionCommit(ConnectionHandler.java:355)
+		at io.agroal.narayana.LocalXAResource.commit(LocalXAResource.java:69)
+		... 46 more
+
+2022-05-09 21:57:26,741 INFO  [org.keycloak.services.DefaultKeycloakTransactionManager] (main) After error, transaction is active? false
+2022-05-09 21:57:26,742 INFO  [org.keycloak.services.DefaultKeycloakTransactionManager] (main) commit org.keycloak.connections.jpa.JpaKeycloakTransaction
+2022-05-09 21:57:26,742 INFO  [org.keycloak.connections.jpa.JpaKeycloakTransaction] (main) Committing transaction
+2022-05-09 21:57:26,742 WARN  [org.keycloak.services.DefaultKeycloakTransactionManager] (main) Error in transaction commit: java.lang.IllegalStateException: Transaction not successfully started
+	at org.hibernate.engine.transaction.internal.TransactionImpl.commit(TransactionImpl.java:95)
+	at org.keycloak.connections.jpa.JpaKeycloakTransaction.commit(JpaKeycloakTransaction.java:49)
+	at org.keycloak.services.DefaultKeycloakTransactionManager.commit(DefaultKeycloakTransactionManager.java:141)
+	at org.keycloak.models.utils.KeycloakModelUtils.runJobInTransaction(KeycloakModelUtils.java:254)
+	at org.keycloak.quarkus.runtime.storage.database.jpa.QuarkusJpaConnectionProviderFactory.postInit(QuarkusJpaConnectionProviderFactory.java:157)
+	at org.keycloak.quarkus.runtime.integration.QuarkusKeycloakSessionFactory.init(QuarkusKeycloakSessionFactory.java:96)
+	at org.keycloak.quarkus.runtime.integration.jaxrs.QuarkusKeycloakApplication.initializeKeycloakSessionFactory(QuarkusKeycloakApplication.java:68)
+	at org.keycloak.quarkus.runtime.integration.jaxrs.QuarkusKeycloakApplication.startup(QuarkusKeycloakApplication.java:49)
+	at org.keycloak.quarkus.runtime.integration.QuarkusLifecycleObserver.onStartupEvent(QuarkusLifecycleObserver.java:37)
+	at org.keycloak.quarkus.runtime.integration.QuarkusLifecycleObserver_Observer_onStartupEvent_b0e82415b143738dc1f986a5fa4668e83d0a5dea.notify(Unknown Source)
+	at io.quarkus.arc.impl.EventImpl$Notifier.notifyObservers(EventImpl.java:320)
+	at io.quarkus.arc.impl.EventImpl$Notifier.notify(EventImpl.java:302)
+	at io.quarkus.arc.impl.EventImpl.fire(EventImpl.java:73)
+	at io.quarkus.arc.runtime.ArcRecorder.fireLifecycleEvent(ArcRecorder.java:128)
+	at io.quarkus.arc.runtime.ArcRecorder.handleLifecycleEvents(ArcRecorder.java:97)
+	at io.quarkus.deployment.steps.LifecycleEventsBuildStep$startupEvent1144526294.deploy_0(Unknown Source)
+	at io.quarkus.deployment.steps.LifecycleEventsBuildStep$startupEvent1144526294.deploy(Unknown Source)
+	at io.quarkus.runner.ApplicationImpl.doStart(Unknown Source)
+	at io.quarkus.runtime.Application.start(Application.java:101)
+	at io.quarkus.runtime.ApplicationLifecycleManager.run(ApplicationLifecycleManager.java:103)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:67)
+	at org.keycloak.quarkus.runtime.KeycloakMain.start(KeycloakMain.java:86)
+	at org.keycloak.quarkus.runtime.cli.command.AbstractStartCommand.run(AbstractStartCommand.java:34)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1939)
+	at picocli.CommandLine.access$1300(CommandLine.java:145)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2358)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2352)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2314)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2316)
+	at picocli.CommandLine.execute(CommandLine.java:2078)
+	at org.keycloak.quarkus.runtime.cli.Picocli.parseAndRun(Picocli.java:88)
+	at org.keycloak.quarkus.runtime.KeycloakMain.main(KeycloakMain.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.quarkus.bootstrap.runner.QuarkusEntryPoint.doRun(QuarkusEntryPoint.java:60)
+	at io.quarkus.bootstrap.runner.QuarkusEntryPoint.main(QuarkusEntryPoint.java:31)
+
+2022-05-09 21:57:26,750 INFO  [org.keycloak.services.DefaultKeycloakTransactionManager] (main) After error, transaction is active? false
+2022-05-09 21:57:26,752 WARN  [org.keycloak.models.utils.KeycloakModelUtils] (main) Exception executing transaction: java.lang.RuntimeException: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.
+	at org.keycloak.transaction.JtaTransactionWrapper.handleException(JtaTransactionWrapper.java:78)
+	at org.keycloak.transaction.JtaTransactionWrapper.commit(JtaTransactionWrapper.java:97)
+	at org.keycloak.services.DefaultKeycloakTransactionManager.commit(DefaultKeycloakTransactionManager.java:141)
+	at org.keycloak.models.utils.KeycloakModelUtils.runJobInTransaction(KeycloakModelUtils.java:254)
+	at org.keycloak.quarkus.runtime.storage.database.jpa.QuarkusJpaConnectionProviderFactory.postInit(QuarkusJpaConnectionProviderFactory.java:157)
+	at org.keycloak.quarkus.runtime.integration.QuarkusKeycloakSessionFactory.init(QuarkusKeycloakSessionFactory.java:96)
+	at org.keycloak.quarkus.runtime.integration.jaxrs.QuarkusKeycloakApplication.initializeKeycloakSessionFactory(QuarkusKeycloakApplication.java:68)
+	at org.keycloak.quarkus.runtime.integration.jaxrs.QuarkusKeycloakApplication.startup(QuarkusKeycloakApplication.java:49)
+	at org.keycloak.quarkus.runtime.integration.QuarkusLifecycleObserver.onStartupEvent(QuarkusLifecycleObserver.java:37)
+	at org.keycloak.quarkus.runtime.integration.QuarkusLifecycleObserver_Observer_onStartupEvent_b0e82415b143738dc1f986a5fa4668e83d0a5dea.notify(Unknown Source)
+	at io.quarkus.arc.impl.EventImpl$Notifier.notifyObservers(EventImpl.java:320)
+	at io.quarkus.arc.impl.EventImpl$Notifier.notify(EventImpl.java:302)
+	at io.quarkus.arc.impl.EventImpl.fire(EventImpl.java:73)
+	at io.quarkus.arc.runtime.ArcRecorder.fireLifecycleEvent(ArcRecorder.java:128)
+	at io.quarkus.arc.runtime.ArcRecorder.handleLifecycleEvents(ArcRecorder.java:97)
+	at io.quarkus.deployment.steps.LifecycleEventsBuildStep$startupEvent1144526294.deploy_0(Unknown Source)
+	at io.quarkus.deployment.steps.LifecycleEventsBuildStep$startupEvent1144526294.deploy(Unknown Source)
+	at io.quarkus.runner.ApplicationImpl.doStart(Unknown Source)
+	at io.quarkus.runtime.Application.start(Application.java:101)
+	at io.quarkus.runtime.ApplicationLifecycleManager.run(ApplicationLifecycleManager.java:103)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:67)
+	at org.keycloak.quarkus.runtime.KeycloakMain.start(KeycloakMain.java:86)
+	at org.keycloak.quarkus.runtime.cli.command.AbstractStartCommand.run(AbstractStartCommand.java:34)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1939)
+	at picocli.CommandLine.access$1300(CommandLine.java:145)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2358)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2352)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2314)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2316)
+	at picocli.CommandLine.execute(CommandLine.java:2078)
+	at org.keycloak.quarkus.runtime.cli.Picocli.parseAndRun(Picocli.java:88)
+	at org.keycloak.quarkus.runtime.KeycloakMain.main(KeycloakMain.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.quarkus.bootstrap.runner.QuarkusEntryPoint.doRun(QuarkusEntryPoint.java:60)
+	at io.quarkus.bootstrap.runner.QuarkusEntryPoint.main(QuarkusEntryPoint.java:31)
+Caused by: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1307)
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.BaseTransaction.commit(BaseTransaction.java:128)
+	at io.quarkus.narayana.jta.runtime.CDIDelegatingTransactionManager.commit(CDIDelegatingTransactionManager.java:105)
+	at org.keycloak.transaction.JtaTransactionWrapper.commit(JtaTransactionWrapper.java:92)
+	... 37 more
+	Suppressed: javax.transaction.xa.XAException: Error trying to transactionCommit local transaction: ERROR: restart transaction: TransactionRetryWithProtoRefreshError: TransactionRetryError: retry txn (RETRY_SERIALIZABLE - failed preemptive refresh): "sql txn" meta={id=7e197f22 key=/Tenant/658/Table/392/1/"u2baz"/0 pri=0.00353144 epo=0 ts=1652126243.725215467,2 min=1652126220.441637991,0 seq=2} lock=true stat=PENDING rts=1652126220.441637991,0 wto=false gul=1652126220.941637991,0
+  Hint: See: https://www.cockroachlabs.com/docs/v21.2/transaction-retry-error-reference.html#retry_serializable
+		at io.agroal.narayana.LocalXAResource.xaException(LocalXAResource.java:140)
+		at io.agroal.narayana.LocalXAResource.xaException(LocalXAResource.java:134)
+		at io.agroal.narayana.LocalXAResource.commit(LocalXAResource.java:72)
+		at com.arjuna.ats.internal.jta.resources.arjunacore.XAResourceRecord.topLevelOnePhaseCommit(XAResourceRecord.java:702)
+		at com.arjuna.ats.arjuna.coordinator.BasicAction.onePhaseCommit(BasicAction.java:2400)
+		at com.arjuna.ats.arjuna.coordinator.BasicAction.End(BasicAction.java:1502)
+		at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.end(TwoPhaseCoordinator.java:96)
+		at com.arjuna.ats.arjuna.AtomicAction.commit(AtomicAction.java:162)
+		at com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1295)
+		... 40 more
+	Caused by: org.postgresql.util.PSQLException: ERROR: restart transaction: TransactionRetryWithProtoRefreshError: TransactionRetryError: retry txn (RETRY_SERIALIZABLE - failed preemptive refresh): "sql txn" meta={id=7e197f22 key=/Tenant/658/Table/392/1/"u2baz"/0 pri=0.00353144 epo=0 ts=1652126243.725215467,2 min=1652126220.441637991,0 seq=2} lock=true stat=PENDING rts=1652126220.441637991,0 wto=false gul=1652126220.941637991,0
+  Hint: See: https://www.cockroachlabs.com/docs/v21.2/transaction-retry-error-reference.html#retry_serializable
+		at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+		at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+		at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+		at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:315)
+		at org.postgresql.jdbc.PgConnection.executeTransactionCommand(PgConnection.java:855)
+		at org.postgresql.jdbc.PgConnection.commit(PgConnection.java:877)
+		at io.agroal.pool.ConnectionHandler.transactionCommit(ConnectionHandler.java:355)
+		at io.agroal.narayana.LocalXAResource.commit(LocalXAResource.java:69)
+		... 46 more
+
+2022-05-09 21:57:26,771 INFO  [org.keycloak.models.utils.RetryUtil] (main) shouldRetry? java.lang.RuntimeException: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.
+2022-05-09 21:57:26,773 INFO  [org.keycloak.models.utils.RetryUtil] (main) cause suppressed javax.transaction.xa.XAException
+2022-05-09 21:57:26,774 INFO  [org.keycloak.models.utils.RetryUtil] (main) sqlException org.postgresql.util.PSQLException: ERROR: restart transaction: TransactionRetryWithProtoRefreshError: TransactionRetryError: retry txn (RETRY_SERIALIZABLE - failed preemptive refresh): "sql txn" meta={id=7e197f22 key=/Tenant/658/Table/392/1/"u2baz"/0 pri=0.00353144 epo=0 ts=1652126243.725215467,2 min=1652126220.441637991,0 seq=2} lock=true stat=PENDING rts=1652126220.441637991,0 wto=false gul=1652126220.941637991,0
+  Hint: See: https://www.cockroachlabs.com/docs/v21.2/transaction-retry-error-reference.html#retry_serializable
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:315)
+	at org.postgresql.jdbc.PgConnection.executeTransactionCommand(PgConnection.java:855)
+	at org.postgresql.jdbc.PgConnection.commit(PgConnection.java:877)
+	at io.agroal.pool.ConnectionHandler.transactionCommit(ConnectionHandler.java:355)
+	at io.agroal.narayana.LocalXAResource.commit(LocalXAResource.java:69)
+	at com.arjuna.ats.internal.jta.resources.arjunacore.XAResourceRecord.topLevelOnePhaseCommit(XAResourceRecord.java:702)
+	at com.arjuna.ats.arjuna.coordinator.BasicAction.onePhaseCommit(BasicAction.java:2400)
+	at com.arjuna.ats.arjuna.coordinator.BasicAction.End(BasicAction.java:1502)
+	at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.end(TwoPhaseCoordinator.java:96)
+	at com.arjuna.ats.arjuna.AtomicAction.commit(AtomicAction.java:162)
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1295)
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.BaseTransaction.commit(BaseTransaction.java:128)
+	at io.quarkus.narayana.jta.runtime.CDIDelegatingTransactionManager.commit(CDIDelegatingTransactionManager.java:105)
+	at org.keycloak.transaction.JtaTransactionWrapper.commit(JtaTransactionWrapper.java:92)
+	at org.keycloak.services.DefaultKeycloakTransactionManager.commit(DefaultKeycloakTransactionManager.java:141)
+	at org.keycloak.models.utils.KeycloakModelUtils.runJobInTransaction(KeycloakModelUtils.java:254)
+	at org.keycloak.quarkus.runtime.storage.database.jpa.QuarkusJpaConnectionProviderFactory.postInit(QuarkusJpaConnectionProviderFactory.java:157)
+	at org.keycloak.quarkus.runtime.integration.QuarkusKeycloakSessionFactory.init(QuarkusKeycloakSessionFactory.java:96)
+	at org.keycloak.quarkus.runtime.integration.jaxrs.QuarkusKeycloakApplication.initializeKeycloakSessionFactory(QuarkusKeycloakApplication.java:68)
+	at org.keycloak.quarkus.runtime.integration.jaxrs.QuarkusKeycloakApplication.startup(QuarkusKeycloakApplication.java:49)
+	at org.keycloak.quarkus.runtime.integration.QuarkusLifecycleObserver.onStartupEvent(QuarkusLifecycleObserver.java:37)
+	at org.keycloak.quarkus.runtime.integration.QuarkusLifecycleObserver_Observer_onStartupEvent_b0e82415b143738dc1f986a5fa4668e83d0a5dea.notify(Unknown Source)
+	at io.quarkus.arc.impl.EventImpl$Notifier.notifyObservers(EventImpl.java:320)
+	at io.quarkus.arc.impl.EventImpl$Notifier.notify(EventImpl.java:302)
+	at io.quarkus.arc.impl.EventImpl.fire(EventImpl.java:73)
+	at io.quarkus.arc.runtime.ArcRecorder.fireLifecycleEvent(ArcRecorder.java:128)
+	at io.quarkus.arc.runtime.ArcRecorder.handleLifecycleEvents(ArcRecorder.java:97)
+	at io.quarkus.deployment.steps.LifecycleEventsBuildStep$startupEvent1144526294.deploy_0(Unknown Source)
+	at io.quarkus.deployment.steps.LifecycleEventsBuildStep$startupEvent1144526294.deploy(Unknown Source)
+	at io.quarkus.runner.ApplicationImpl.doStart(Unknown Source)
+	at io.quarkus.runtime.Application.start(Application.java:101)
+	at io.quarkus.runtime.ApplicationLifecycleManager.run(ApplicationLifecycleManager.java:103)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:67)
+	at org.keycloak.quarkus.runtime.KeycloakMain.start(KeycloakMain.java:86)
+	at org.keycloak.quarkus.runtime.cli.command.AbstractStartCommand.run(AbstractStartCommand.java:34)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1939)
+	at picocli.CommandLine.access$1300(CommandLine.java:145)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2358)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2352)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2314)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2316)
+	at picocli.CommandLine.execute(CommandLine.java:2078)
+	at org.keycloak.quarkus.runtime.cli.Picocli.parseAndRun(Picocli.java:88)
+	at org.keycloak.quarkus.runtime.KeycloakMain.main(KeycloakMain.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.quarkus.bootstrap.runner.QuarkusEntryPoint.doRun(QuarkusEntryPoint.java:60)
+	at io.quarkus.bootstrap.runner.QuarkusEntryPoint.main(QuarkusEntryPoint.java:31)
+
+2022-05-09 21:57:26,774 INFO  [org.keycloak.models.utils.RetryUtil] (main) SQLException is retryable? true : sql state [40001], error code [0], message [ERROR: restart transaction: TransactionRetryWithProtoRefreshError: TransactionRetryError: retry txn (RETRY_SERIALIZABLE - failed preemptive refresh): "sql txn" meta={id=7e197f22 key=/Tenant/658/Table/392/1/"u2baz"/0 pri=0.00353144 epo=0 ts=1652126243.725215467,2 min=1652126220.441637991,0 seq=2} lock=true stat=PENDING rts=1652126220.441637991,0 wto=false gul=1652126220.941637991,0
+  Hint: See: https://www.cockroachlabs.com/docs/v21.2/transaction-retry-error-reference.html#retry_serializable]
+2022-05-09 21:57:26,774 INFO  [org.keycloak.models.utils.KeycloakModelUtils] (main) Transaction active? false Should retry? true
+2022-05-09 21:57:27,005 ERROR [org.keycloak.quarkus.runtime.cli.ExecutionExceptionHandler] (main) ERROR: Failed to start server in (development) mode
+2022-05-09 21:57:27,005 ERROR [org.keycloak.quarkus.runtime.cli.ExecutionExceptionHandler] (main) Error details:: java.lang.RuntimeException: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.
+	at org.keycloak.transaction.JtaTransactionWrapper.handleException(JtaTransactionWrapper.java:78)
+	at org.keycloak.transaction.JtaTransactionWrapper.commit(JtaTransactionWrapper.java:97)
+	at org.keycloak.services.DefaultKeycloakTransactionManager.commit(DefaultKeycloakTransactionManager.java:141)
+	at org.keycloak.models.utils.KeycloakModelUtils.runJobInTransaction(KeycloakModelUtils.java:254)
+	at org.keycloak.quarkus.runtime.storage.database.jpa.QuarkusJpaConnectionProviderFactory.postInit(QuarkusJpaConnectionProviderFactory.java:157)
+	at org.keycloak.quarkus.runtime.integration.QuarkusKeycloakSessionFactory.init(QuarkusKeycloakSessionFactory.java:96)
+	at org.keycloak.quarkus.runtime.integration.jaxrs.QuarkusKeycloakApplication.initializeKeycloakSessionFactory(QuarkusKeycloakApplication.java:68)
+	at org.keycloak.quarkus.runtime.integration.jaxrs.QuarkusKeycloakApplication.startup(QuarkusKeycloakApplication.java:49)
+	at org.keycloak.quarkus.runtime.integration.QuarkusLifecycleObserver.onStartupEvent(QuarkusLifecycleObserver.java:37)
+	at org.keycloak.quarkus.runtime.integration.QuarkusLifecycleObserver_Observer_onStartupEvent_b0e82415b143738dc1f986a5fa4668e83d0a5dea.notify(Unknown Source)
+	at io.quarkus.arc.impl.EventImpl$Notifier.notifyObservers(EventImpl.java:320)
+	at io.quarkus.arc.impl.EventImpl$Notifier.notify(EventImpl.java:302)
+	at io.quarkus.arc.impl.EventImpl.fire(EventImpl.java:73)
+	at io.quarkus.arc.runtime.ArcRecorder.fireLifecycleEvent(ArcRecorder.java:128)
+	at io.quarkus.arc.runtime.ArcRecorder.handleLifecycleEvents(ArcRecorder.java:97)
+	at io.quarkus.deployment.steps.LifecycleEventsBuildStep$startupEvent1144526294.deploy_0(Unknown Source)
+	at io.quarkus.deployment.steps.LifecycleEventsBuildStep$startupEvent1144526294.deploy(Unknown Source)
+	at io.quarkus.runner.ApplicationImpl.doStart(Unknown Source)
+	at io.quarkus.runtime.Application.start(Application.java:101)
+	at io.quarkus.runtime.ApplicationLifecycleManager.run(ApplicationLifecycleManager.java:103)
+	at io.quarkus.runtime.Quarkus.run(Quarkus.java:67)
+	at org.keycloak.quarkus.runtime.KeycloakMain.start(KeycloakMain.java:86)
+	at org.keycloak.quarkus.runtime.cli.command.AbstractStartCommand.run(AbstractStartCommand.java:34)
+	at picocli.CommandLine.executeUserObject(CommandLine.java:1939)
+	at picocli.CommandLine.access$1300(CommandLine.java:145)
+	at picocli.CommandLine$RunLast.executeUserObjectOfLastSubcommandWithSameParent(CommandLine.java:2358)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2352)
+	at picocli.CommandLine$RunLast.handle(CommandLine.java:2314)
+	at picocli.CommandLine$AbstractParseResultHandler.execute(CommandLine.java:2179)
+	at picocli.CommandLine$RunLast.execute(CommandLine.java:2316)
+	at picocli.CommandLine.execute(CommandLine.java:2078)
+	at org.keycloak.quarkus.runtime.cli.Picocli.parseAndRun(Picocli.java:88)
+	at org.keycloak.quarkus.runtime.KeycloakMain.main(KeycloakMain.java:77)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:566)
+	at io.quarkus.bootstrap.runner.QuarkusEntryPoint.doRun(QuarkusEntryPoint.java:60)
+	at io.quarkus.bootstrap.runner.QuarkusEntryPoint.main(QuarkusEntryPoint.java:31)
+Caused by: javax.transaction.RollbackException: ARJUNA016053: Could not commit transaction.
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1307)
+	at com.arjuna.ats.internal.jta.transaction.arjunacore.BaseTransaction.commit(BaseTransaction.java:128)
+	at io.quarkus.narayana.jta.runtime.CDIDelegatingTransactionManager.commit(CDIDelegatingTransactionManager.java:105)
+	at org.keycloak.transaction.JtaTransactionWrapper.commit(JtaTransactionWrapper.java:92)
+	... 37 more
+	Suppressed: javax.transaction.xa.XAException: Error trying to transactionCommit local transaction: ERROR: restart transaction: TransactionRetryWithProtoRefreshError: TransactionRetryError: retry txn (RETRY_SERIALIZABLE - failed preemptive refresh): "sql txn" meta={id=7e197f22 key=/Tenant/658/Table/392/1/"u2baz"/0 pri=0.00353144 epo=0 ts=1652126243.725215467,2 min=1652126220.441637991,0 seq=2} lock=true stat=PENDING rts=1652126220.441637991,0 wto=false gul=1652126220.941637991,0
+  Hint: See: https://www.cockroachlabs.com/docs/v21.2/transaction-retry-error-reference.html#retry_serializable
+		at io.agroal.narayana.LocalXAResource.xaException(LocalXAResource.java:140)
+		at io.agroal.narayana.LocalXAResource.xaException(LocalXAResource.java:134)
+		at io.agroal.narayana.LocalXAResource.commit(LocalXAResource.java:72)
+		at com.arjuna.ats.internal.jta.resources.arjunacore.XAResourceRecord.topLevelOnePhaseCommit(XAResourceRecord.java:702)
+		at com.arjuna.ats.arjuna.coordinator.BasicAction.onePhaseCommit(BasicAction.java:2400)
+		at com.arjuna.ats.arjuna.coordinator.BasicAction.End(BasicAction.java:1502)
+		at com.arjuna.ats.arjuna.coordinator.TwoPhaseCoordinator.end(TwoPhaseCoordinator.java:96)
+		at com.arjuna.ats.arjuna.AtomicAction.commit(AtomicAction.java:162)
+		at com.arjuna.ats.internal.jta.transaction.arjunacore.TransactionImple.commitAndDisassociate(TransactionImple.java:1295)
+		... 40 more
+	Caused by: org.postgresql.util.PSQLException: ERROR: restart transaction: TransactionRetryWithProtoRefreshError: TransactionRetryError: retry txn (RETRY_SERIALIZABLE - failed preemptive refresh): "sql txn" meta={id=7e197f22 key=/Tenant/658/Table/392/1/"u2baz"/0 pri=0.00353144 epo=0 ts=1652126243.725215467,2 min=1652126220.441637991,0 seq=2} lock=true stat=PENDING rts=1652126220.441637991,0 wto=false gul=1652126220.941637991,0
+  Hint: See: https://www.cockroachlabs.com/docs/v21.2/transaction-retry-error-reference.html#retry_serializable
+		at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2675)
+		at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2365)
+		at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:355)
+		at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:315)
+		at org.postgresql.jdbc.PgConnection.executeTransactionCommand(PgConnection.java:855)
+		at org.postgresql.jdbc.PgConnection.commit(PgConnection.java:877)
+		at io.agroal.pool.ConnectionHandler.transactionCommit(ConnectionHandler.java:355)
+		at io.agroal.narayana.LocalXAResource.commit(LocalXAResource.java:69)
+		... 46 more

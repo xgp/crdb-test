@@ -2,6 +2,10 @@
 
 let's start with the `xgp/crdb-legacy` branch in my fork of the keycloak repo: https://github.com/xgp/keycloak/tree/xgp/crdb-legacy
 
+# crdb
+
+get a crdb "serverless" account in your region https://cockroachlabs.cloud/signup?referralId=web_getstartedcrdb_serverless_org
+
 # testing keycloak(quarkus) startup
 
 in the keycloak repo:
@@ -16,8 +20,9 @@ rm -rf keycloak-999-SNAPSHOT/
 cp $KEYCLOAK_REPO/quarkus/dist/target/keycloak-999-SNAPSHOT.zip .
 unzip keycloak-999-SNAPSHOT.zip
 cd keycloak-999-SNAPSHOT/
-./bin/kc.sh --verbose start-dev --db=cockroach --db-username=user --db-password=xxxx --db-url=jdbc:postgresql://free-tier13.aws-eu-central-1.cockroachlabs.cloud:26257/defaultdb?options=--cluster%3Dkeycloak-test-658 --transaction-xa-enabled=false --db-pool-min-size=0
+./bin/kc.sh --verbose start-dev --db=cockroach --db-username=uuuu --db-password=xxxx --db-url=jdbc:postgresql://free-tier13.aws-eu-central-1.cockroachlabs.cloud:26257/defaultdb?options=--cluster%3Dkeycloak-test-658 --transaction-xa-enabled=false --db-pool-min-size=0
 ```
+**change to your crdb serverless db-url**
 
 because of the failure, the database gets in a bad state, you need to run `delete-from-kc-tables-17.0.1.sql` in your database between runs, and optionally `drop-all-kc-tables-17.0.1.sql` if you want to clear the schema (to force keycloak bootstrap to run liquibase migration from scratch).
 
